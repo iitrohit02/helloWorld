@@ -24,7 +24,7 @@ public class SaveHelloDao {
 		
 		SaveHelloResponse response = new SaveHelloResponse();
 		response.setResponse("World");
-		response.setPrimary_key("12");
+		response.setPrimary_key(request.getId());
 
 		return response;
 	}

@@ -17,9 +17,7 @@ public class SaveHelloService {
 	public SaveHelloResponse saveHello(SaveHelloRequest request) {
 
 		SaveHelloEntity saveHelloEntity = new SaveHelloEntity();
-		
 		BeanUtils.copyProperties(request, saveHelloEntity);
-		
 		return saveHelloDao.saveHello(saveHelloEntity);
 	}
 
